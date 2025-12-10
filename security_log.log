@@ -2924,3 +2924,340 @@
 2025-12-08 00:54:23,275 127.0.0.1 - - [08/Dec/2025 00:54:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
 2025-12-08 00:54:23,321 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/?","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/?","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
 2025-12-08 00:54:23,321 127.0.0.1 - - [08/Dec/2025 00:54:23] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:47:47,555 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.193:5000
+2025-12-10 03:47:47,555 [33mPress CTRL+C to quit[0m
+2025-12-10 03:47:47,555  * Restarting with stat
+2025-12-10 03:47:47,773  * Debugger is active!
+2025-12-10 03:47:47,773  * Debugger PIN: 116-558-814
+2025-12-10 03:47:48,631 127.0.0.1 - - [10/Dec/2025 03:47:48] "GET / HTTP/1.1" 200 -
+2025-12-10 03:47:48,800 127.0.0.1 - - [10/Dec/2025 03:47:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:47:48,813 127.0.0.1 - - [10/Dec/2025 03:47:48] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:47:48,821 127.0.0.1 - - [10/Dec/2025 03:47:48] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:48,929 127.0.0.1 - - [10/Dec/2025 03:47:48] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:47:48,940 127.0.0.1 - - [10/Dec/2025 03:47:48] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:48,974 127.0.0.1 - - [10/Dec/2025 03:47:48] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,000 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,015 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,019 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,048 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:47:49,048 127.0.0.1 - - [10/Dec/2025 03:47:49] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:47:49,064 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,086 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:47:49,114 127.0.0.1 - - [10/Dec/2025 03:47:49] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,789 127.0.0.1 - - [10/Dec/2025 03:48:46] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:48:46,832 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,835 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,837 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,866 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,894 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:46,920 127.0.0.1 - - [10/Dec/2025 03:48:46] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:48:55,934 127.0.0.1 - - [10/Dec/2025 03:48:55] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:48:55,981 127.0.0.1 - - [10/Dec/2025 03:48:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:55,982 127.0.0.1 - - [10/Dec/2025 03:48:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:55,984 127.0.0.1 - - [10/Dec/2025 03:48:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:56,010 127.0.0.1 - - [10/Dec/2025 03:48:56] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:56,041 127.0.0.1 - - [10/Dec/2025 03:48:56] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:56,067 127.0.0.1 - - [10/Dec/2025 03:48:56] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,798 127.0.0.1 - - [10/Dec/2025 03:48:57] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:48:57,820 127.0.0.1 - - [10/Dec/2025 03:48:57] "GET / HTTP/1.1" 200 -
+2025-12-10 03:48:57,864 127.0.0.1 - - [10/Dec/2025 03:48:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,867 127.0.0.1 - - [10/Dec/2025 03:48:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,870 127.0.0.1 - - [10/Dec/2025 03:48:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,910 127.0.0.1 - - [10/Dec/2025 03:48:57] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,936 127.0.0.1 - - [10/Dec/2025 03:48:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:57,989 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:48:57,990 127.0.0.1 - - [10/Dec/2025 03:48:57] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:48:59,254 127.0.0.1 - - [10/Dec/2025 03:48:59] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:48:59,297 127.0.0.1 - - [10/Dec/2025 03:48:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:59,299 127.0.0.1 - - [10/Dec/2025 03:48:59] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:59,301 127.0.0.1 - - [10/Dec/2025 03:48:59] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:48:59,331 127.0.0.1 - - [10/Dec/2025 03:48:59] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:48:59,351 127.0.0.1 - - [10/Dec/2025 03:48:59] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,604 127.0.0.1 - - [10/Dec/2025 03:49:01] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:49:01,626 127.0.0.1 - - [10/Dec/2025 03:49:01] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:01,671 127.0.0.1 - - [10/Dec/2025 03:49:01] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,676 127.0.0.1 - - [10/Dec/2025 03:49:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,678 127.0.0.1 - - [10/Dec/2025 03:49:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,708 127.0.0.1 - - [10/Dec/2025 03:49:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,731 127.0.0.1 - - [10/Dec/2025 03:49:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:01,787 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:01,787 127.0.0.1 - - [10/Dec/2025 03:49:01] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:02,655 127.0.0.1 - - [10/Dec/2025 03:49:02] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:02,697 127.0.0.1 - - [10/Dec/2025 03:49:02] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:02,700 127.0.0.1 - - [10/Dec/2025 03:49:02] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:02,702 127.0.0.1 - - [10/Dec/2025 03:49:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:02,732 127.0.0.1 - - [10/Dec/2025 03:49:02] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:02,757 127.0.0.1 - - [10/Dec/2025 03:49:02] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:03,879 127.0.0.1 - - [10/Dec/2025 03:49:03] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:49:03,902 127.0.0.1 - - [10/Dec/2025 03:49:03] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:03,955 127.0.0.1 - - [10/Dec/2025 03:49:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:03,957 127.0.0.1 - - [10/Dec/2025 03:49:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:03,959 127.0.0.1 - - [10/Dec/2025 03:49:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:03,999 127.0.0.1 - - [10/Dec/2025 03:49:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:04,023 127.0.0.1 - - [10/Dec/2025 03:49:04] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:04,083 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:04,083 127.0.0.1 - - [10/Dec/2025 03:49:04] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:21,985 127.0.0.1 - - [10/Dec/2025 03:49:21] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:22,027 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,030 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,032 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,118 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,138 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,163 127.0.0.1 - - [10/Dec/2025 03:49:22] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:49:22,185 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:22,185 127.0.0.1 - - [10/Dec/2025 03:49:22] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:36,043 127.0.0.1 - - [10/Dec/2025 03:49:36] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:36,086 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,088 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,090 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,116 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,140 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,163 127.0.0.1 - - [10/Dec/2025 03:49:36] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:49:36,183 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:36,183 127.0.0.1 - - [10/Dec/2025 03:49:36] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:37,546 127.0.0.1 - - [10/Dec/2025 03:49:37] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:37,596 127.0.0.1 - - [10/Dec/2025 03:49:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:37,597 127.0.0.1 - - [10/Dec/2025 03:49:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:37,602 127.0.0.1 - - [10/Dec/2025 03:49:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:37,635 127.0.0.1 - - [10/Dec/2025 03:49:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:37,658 127.0.0.1 - - [10/Dec/2025 03:49:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,361 127.0.0.1 - - [10/Dec/2025 03:49:53] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:53,404 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,407 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,409 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,462 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,484 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:53,510 127.0.0.1 - - [10/Dec/2025 03:49:53] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,127 127.0.0.1 - - [10/Dec/2025 03:49:54] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:49:54,153 127.0.0.1 - - [10/Dec/2025 03:49:54] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:54,199 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,202 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,205 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,237 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,258 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,314 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:54,315 127.0.0.1 - - [10/Dec/2025 03:49:54] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:54,469 127.0.0.1 - - [10/Dec/2025 03:49:54] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:54,512 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,514 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,516 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,542 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,564 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,837 127.0.0.1 - - [10/Dec/2025 03:49:54] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:49:54,859 127.0.0.1 - - [10/Dec/2025 03:49:54] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:54,907 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,910 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,912 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,943 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:54,970 127.0.0.1 - - [10/Dec/2025 03:49:54] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,020 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:55,021 127.0.0.1 - - [10/Dec/2025 03:49:55] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:55,159 127.0.0.1 - - [10/Dec/2025 03:49:55] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:55,206 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,207 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,210 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,237 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,267 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,475 127.0.0.1 - - [10/Dec/2025 03:49:55] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:49:55,495 127.0.0.1 - - [10/Dec/2025 03:49:55] "GET / HTTP/1.1" 200 -
+2025-12-10 03:49:55,543 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,545 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,547 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,577 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,597 127.0.0.1 - - [10/Dec/2025 03:49:55] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:55,639 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:49:55,640 127.0.0.1 - - [10/Dec/2025 03:49:55] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:49:57,846 127.0.0.1 - - [10/Dec/2025 03:49:57] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:49:57,892 127.0.0.1 - - [10/Dec/2025 03:49:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:57,895 127.0.0.1 - - [10/Dec/2025 03:49:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:49:57,897 127.0.0.1 - - [10/Dec/2025 03:49:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:57,922 127.0.0.1 - - [10/Dec/2025 03:49:57] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:57,944 127.0.0.1 - - [10/Dec/2025 03:49:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:49:59,334 127.0.0.1 - - [10/Dec/2025 03:49:59] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:49:59,381 127.0.0.1 - - [10/Dec/2025 03:49:59] "GET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-10 03:49:59,384 127.0.0.1 - - [10/Dec/2025 03:49:59] "GET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-10 03:49:59,431 127.0.0.1 - - [10/Dec/2025 03:49:59] "GET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=RWf7RoFNGHg5hbs0fzlA HTTP/1.1" 200 -
+2025-12-10 03:49:59,456 127.0.0.1 - - [10/Dec/2025 03:49:59] "GET /form.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-10 03:50:45,205 127.0.0.1 - - [10/Dec/2025 03:50:45] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:50:45,230 127.0.0.1 - - [10/Dec/2025 03:50:45] "GET / HTTP/1.1" 200 -
+2025-12-10 03:50:45,286 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,288 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,290 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,326 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,349 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,398 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:50:45,398 127.0.0.1 - - [10/Dec/2025 03:50:45] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:50:45,505 127.0.0.1 - - [10/Dec/2025 03:50:45] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:50:45,549 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,551 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,553 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,583 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:50:45,605 127.0.0.1 - - [10/Dec/2025 03:50:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:51:42,945  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/userManagement.py', reloading
+2025-12-10 03:51:42,986  * Restarting with stat
+2025-12-10 03:51:43,265  * Debugger is active!
+2025-12-10 03:51:43,266  * Debugger PIN: 116-558-814
+2025-12-10 03:52:03,471  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/userManagement.py', reloading
+2025-12-10 03:52:03,501  * Restarting with stat
+2025-12-10 03:52:03,731  * Debugger is active!
+2025-12-10 03:52:03,731  * Debugger PIN: 116-558-814
+2025-12-10 03:52:07,824 127.0.0.1 - - [10/Dec/2025 03:52:07] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:52:07,869 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:07,870 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:07,870 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:07,924 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:07,958 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:07,994 127.0.0.1 - - [10/Dec/2025 03:52:07] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,701 127.0.0.1 - - [10/Dec/2025 03:52:10] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:52:10,725 127.0.0.1 - - [10/Dec/2025 03:52:10] "GET / HTTP/1.1" 200 -
+2025-12-10 03:52:10,774 127.0.0.1 - - [10/Dec/2025 03:52:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,778 127.0.0.1 - - [10/Dec/2025 03:52:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,780 127.0.0.1 - - [10/Dec/2025 03:52:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,816 127.0.0.1 - - [10/Dec/2025 03:52:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,842 127.0.0.1 - - [10/Dec/2025 03:52:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:10,897 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:52:10,897 127.0.0.1 - - [10/Dec/2025 03:52:10] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:52:13,441 127.0.0.1 - - [10/Dec/2025 03:52:13] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:52:13,491 127.0.0.1 - - [10/Dec/2025 03:52:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:13,497 127.0.0.1 - - [10/Dec/2025 03:52:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:13,499 127.0.0.1 - - [10/Dec/2025 03:52:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:13,534 127.0.0.1 - - [10/Dec/2025 03:52:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:13,566 127.0.0.1 - - [10/Dec/2025 03:52:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,450 127.0.0.1 - - [10/Dec/2025 03:52:17] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2025-12-10 03:52:17,474 127.0.0.1 - - [10/Dec/2025 03:52:17] "GET / HTTP/1.1" 200 -
+2025-12-10 03:52:17,521 127.0.0.1 - - [10/Dec/2025 03:52:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,524 127.0.0.1 - - [10/Dec/2025 03:52:17] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,526 127.0.0.1 - - [10/Dec/2025 03:52:17] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,573 127.0.0.1 - - [10/Dec/2025 03:52:17] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,603 127.0.0.1 - - [10/Dec/2025 03:52:17] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:17,654 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 03:52:17,654 127.0.0.1 - - [10/Dec/2025 03:52:17] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 03:52:18,263 127.0.0.1 - - [10/Dec/2025 03:52:18] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:52:18,310 127.0.0.1 - - [10/Dec/2025 03:52:18] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:18,312 127.0.0.1 - - [10/Dec/2025 03:52:18] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:18,340 127.0.0.1 - - [10/Dec/2025 03:52:18] "GET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=9JJ5bdOKw9ihF1Kduo7T HTTP/1.1" 200 -
+2025-12-10 03:52:23,152 127.0.0.1 - - [10/Dec/2025 03:52:23] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:52:23,199 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,203 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,204 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,235 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,258 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,548 127.0.0.1 - - [10/Dec/2025 03:52:23] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:52:23,595 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,598 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:52:23,625 127.0.0.1 - - [10/Dec/2025 03:52:23] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=9JJ5bdOKw9ihF1Kduo7T HTTP/1.1[0m" 304 -
+2025-12-10 03:52:33,009  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/userManagement.py', reloading
+2025-12-10 03:52:33,044  * Restarting with stat
+2025-12-10 03:52:33,306  * Debugger is active!
+2025-12-10 03:52:33,307  * Debugger PIN: 116-558-814
+2025-12-10 03:52:53,504  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/main.py', reloading
+2025-12-10 03:52:53,535  * Restarting with stat
+2025-12-10 03:52:53,794  * Debugger is active!
+2025-12-10 03:52:53,795  * Debugger PIN: 116-558-814
+2025-12-10 03:53:09,968  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/main.py', reloading
+2025-12-10 03:53:10,005  * Restarting with stat
+2025-12-10 03:53:10,290  * Debugger is active!
+2025-12-10 03:53:10,291  * Debugger PIN: 116-558-814
+2025-12-10 03:53:18,398  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/main.py', reloading
+2025-12-10 03:53:18,426  * Restarting with stat
+2025-12-10 03:53:18,689  * Debugger is active!
+2025-12-10 03:53:18,689  * Debugger PIN: 116-558-814
+2025-12-10 03:53:22,352 127.0.0.1 - - [10/Dec/2025 03:53:22] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:53:22,394 127.0.0.1 - - [10/Dec/2025 03:53:22] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:53:22,394 127.0.0.1 - - [10/Dec/2025 03:53:22] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:53:22,422 127.0.0.1 - - [10/Dec/2025 03:53:22] "GET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1" 200 -
+2025-12-10 03:53:58,155 127.0.0.1 - - [10/Dec/2025 03:53:58] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:53:58,201 127.0.0.1 - - [10/Dec/2025 03:53:58] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:53:58,204 127.0.0.1 - - [10/Dec/2025 03:53:58] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:53:58,228 127.0.0.1 - - [10/Dec/2025 03:53:58] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1[0m" 304 -
+2025-12-10 03:54:31,608 127.0.0.1 - - [10/Dec/2025 03:54:31] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 03:54:31,653 127.0.0.1 - - [10/Dec/2025 03:54:31] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:54:31,656 127.0.0.1 - - [10/Dec/2025 03:54:31] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:54:31,683 127.0.0.1 - - [10/Dec/2025 03:54:31] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,622 127.0.0.1 - - [10/Dec/2025 03:54:45] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:54:45,663 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,664 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,667 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,703 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,726 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:54:45,751 127.0.0.1 - - [10/Dec/2025 03:54:45] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:54:47,826 127.0.0.1 - - [10/Dec/2025 03:54:47] "[35m[1mPOST /signup.html HTTP/1.1[0m" 500 -
+2025-12-10 03:54:47,864 127.0.0.1 - - [10/Dec/2025 03:54:47] "GET /signup.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-12-10 03:54:47,866 127.0.0.1 - - [10/Dec/2025 03:54:47] "GET /signup.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-12-10 03:54:47,894 127.0.0.1 - - [10/Dec/2025 03:54:47] "GET /signup.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1" 200 -
+2025-12-10 03:54:47,920 127.0.0.1 - - [10/Dec/2025 03:54:47] "GET /signup.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-12-10 03:55:39,218 127.0.0.1 - - [10/Dec/2025 03:55:39] "[35m[1mPOST /signup.html HTTP/1.1[0m" 500 -
+2025-12-10 03:55:39,260 127.0.0.1 - - [10/Dec/2025 03:55:39] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:55:39,263 127.0.0.1 - - [10/Dec/2025 03:55:39] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:55:39,289 127.0.0.1 - - [10/Dec/2025 03:55:39] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1[0m" 304 -
+2025-12-10 03:55:39,314 127.0.0.1 - - [10/Dec/2025 03:55:39] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-10 03:56:59,271 127.0.0.1 - - [10/Dec/2025 03:56:59] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:57:02,180 127.0.0.1 - - [10/Dec/2025 03:57:02] "[35m[1mPOST /signup.html HTTP/1.1[0m" 500 -
+2025-12-10 03:57:02,221 127.0.0.1 - - [10/Dec/2025 03:57:02] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:57:02,232 127.0.0.1 - - [10/Dec/2025 03:57:02] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:57:02,263 127.0.0.1 - - [10/Dec/2025 03:57:02] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1[0m" 304 -
+2025-12-10 03:57:02,295 127.0.0.1 - - [10/Dec/2025 03:57:02] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-10 03:58:28,358 127.0.0.1 - - [10/Dec/2025 03:58:28] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 03:58:30,688 127.0.0.1 - - [10/Dec/2025 03:58:30] "[35m[1mPOST /signup.html HTTP/1.1[0m" 500 -
+2025-12-10 03:58:30,823 127.0.0.1 - - [10/Dec/2025 03:58:30] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 03:58:30,827 127.0.0.1 - - [10/Dec/2025 03:58:30] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:58:30,858 127.0.0.1 - - [10/Dec/2025 03:58:30] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png&s=4Qf3VnAHWZRiz3QbM78I HTTP/1.1[0m" 304 -
+2025-12-10 03:58:30,956 127.0.0.1 - - [10/Dec/2025 03:58:30] "[36mGET /signup.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-12-10 03:59:08,711  * Detected change in '/workspaces/2026SE_Task1_Kevin.T/userManagement.py', reloading
+2025-12-10 03:59:08,745  * Restarting with stat
+2025-12-10 03:59:08,972  * Debugger is active!
+2025-12-10 03:59:08,972  * Debugger PIN: 116-558-814
+2025-12-10 03:59:10,406 127.0.0.1 - - [10/Dec/2025 03:59:10] "POST /signup.html HTTP/1.1" 200 -
+2025-12-10 03:59:10,459 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:10,460 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:10,460 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:10,495 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:10,518 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:10,549 127.0.0.1 - - [10/Dec/2025 03:59:10] "[36mGET /static/images/favicon.png HTTP/1.1[0m" 304 -
+2025-12-10 03:59:12,827 127.0.0.1 - - [10/Dec/2025 03:59:12] "POST /signup.html HTTP/1.1" 200 -
+2025-12-10 03:59:12,883 127.0.0.1 - - [10/Dec/2025 03:59:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:12,886 127.0.0.1 - - [10/Dec/2025 03:59:12] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:12,888 127.0.0.1 - - [10/Dec/2025 03:59:12] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:12,921 127.0.0.1 - - [10/Dec/2025 03:59:12] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:12,944 127.0.0.1 - - [10/Dec/2025 03:59:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:29,562 127.0.0.1 - - [10/Dec/2025 03:59:29] "POST /signup.html HTTP/1.1" 200 -
+2025-12-10 03:59:29,608 127.0.0.1 - - [10/Dec/2025 03:59:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:29,611 127.0.0.1 - - [10/Dec/2025 03:59:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 03:59:29,615 127.0.0.1 - - [10/Dec/2025 03:59:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:29,651 127.0.0.1 - - [10/Dec/2025 03:59:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 03:59:29,676 127.0.0.1 - - [10/Dec/2025 03:59:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:01,200 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.193:5000
+2025-12-10 04:01:01,200 [33mPress CTRL+C to quit[0m
+2025-12-10 04:01:01,200  * Restarting with stat
+2025-12-10 04:01:01,423  * Debugger is active!
+2025-12-10 04:01:01,423  * Debugger PIN: 116-558-814
+2025-12-10 04:01:01,660 127.0.0.1 - - [10/Dec/2025 04:01:01] "GET / HTTP/1.1" 200 -
+2025-12-10 04:01:01,729 127.0.0.1 - - [10/Dec/2025 04:01:01] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:01,855 127.0.0.1 - - [10/Dec/2025 04:01:01] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:01,856 127.0.0.1 - - [10/Dec/2025 04:01:01] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:01,905 127.0.0.1 - - [10/Dec/2025 04:01:01] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:01,990 127.0.0.1 - - [10/Dec/2025 04:01:01] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:02,054 {"csp-report":{"document-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/","referrer":"https://bookish-acorn-r995pgppr95fwxvp.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://bookish-acorn-r995pgppr95fwxvp-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2025-12-10 04:01:02,054 127.0.0.1 - - [10/Dec/2025 04:01:02] "POST /csp_report HTTP/1.1" 200 -
+2025-12-10 04:01:05,626 127.0.0.1 - - [10/Dec/2025 04:01:05] "[35m[1mPOST /form.html HTTP/1.1[0m" 500 -
+2025-12-10 04:01:05,665 127.0.0.1 - - [10/Dec/2025 04:01:05] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:05,668 127.0.0.1 - - [10/Dec/2025 04:01:05] "[36mGET /form.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:05,716 127.0.0.1 - - [10/Dec/2025 04:01:05] "GET /form.html?__debugger__=yes&cmd=resource&f=console.png&s=pfrKQiQBAH2WiowqF1tg HTTP/1.1" 200 -
+2025-12-10 04:01:08,188 127.0.0.1 - - [10/Dec/2025 04:01:08] "GET /signup.html HTTP/1.1" 200 -
+2025-12-10 04:01:08,239 127.0.0.1 - - [10/Dec/2025 04:01:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:08,242 127.0.0.1 - - [10/Dec/2025 04:01:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:08,245 127.0.0.1 - - [10/Dec/2025 04:01:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:08,284 127.0.0.1 - - [10/Dec/2025 04:01:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:08,308 127.0.0.1 - - [10/Dec/2025 04:01:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:11,470 127.0.0.1 - - [10/Dec/2025 04:01:11] "POST /signup.html HTTP/1.1" 200 -
+2025-12-10 04:01:11,513 127.0.0.1 - - [10/Dec/2025 04:01:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:11,516 127.0.0.1 - - [10/Dec/2025 04:01:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:11,518 127.0.0.1 - - [10/Dec/2025 04:01:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2025-12-10 04:01:11,546 127.0.0.1 - - [10/Dec/2025 04:01:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2025-12-10 04:01:11,568 127.0.0.1 - - [10/Dec/2025 04:01:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -

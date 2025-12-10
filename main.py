@@ -93,7 +93,13 @@ def auth():
 
 @app.route("/signup.html", methods=["POST", "GET"])
 def signup():
-    return render_template("/signup.html")
+    if request.method == "POST":
+        email = request.form["email"]
+        password = request.form["password"]
+        dbHandler.insertUser(email, password)
+        return render_template("/signup.html")
+    else:
+        return render_template("/signup.html")
 
 
 if __name__ == "__main__":
