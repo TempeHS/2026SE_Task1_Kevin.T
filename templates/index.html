@@ -6,7 +6,7 @@
 </div>
 <div class="container">
   <div class="row">
-    <form action="/form.html" method="POST" class="box">
+    <form method="POST" class="box">
       <div class="col-auto">
         <label name="exampleFormControlInput1" class="form-label"
           >Email address</label
@@ -23,6 +23,7 @@
       <div class="col-auto">
         <label for="exampleInputPassword1">Password</label>
         <input
+          name="password"
           type="password"
           class="form-control"
           id="exampleInputPassword1"
@@ -36,6 +37,9 @@
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
     </form>
     <a href="signup.html">Sign Up</a>
+    {% if error_message %}
+    <div class="alert alert-warning" role="alert">{{ error_message }}</div>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

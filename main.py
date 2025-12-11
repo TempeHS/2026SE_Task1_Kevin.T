@@ -34,16 +34,7 @@ csrf = CSRFProtect(app)
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
 def root():
-    if request.method == "POST":
-        email = request.form["email"]
-        password = request.form["password"]
-        try:
-            dbHandler.verifyUser(email, password)  # function isnt done
-        except:
-            return
-        return redirect("/auth.html", 200)
-    else:
-        return redirect("/", 302)
+    return redirect("/", 302)
 
 
 @app.route("/", methods=["POST", "GET"])
@@ -68,7 +59,16 @@ def root():
     }
 )
 def index():
-    return render_template("/index.html")
+    if request.method == "POST":
+        email = request.form["email"]
+        password = request.form["password"]
+        status, message = dbHandler.verifyUser(email, password)  # function isnt done
+        if status:
+            return redirect("/auth.html")
+        else:
+            return render_template("/index.html", error_message=message)
+    else:
+        return render_template("/index.html")
 
 
 @app.route("/privacy.html", methods=["GET"])
@@ -79,12 +79,13 @@ def privacy():
 # example CSRF protected form
 @app.route("/form.html", methods=["POST", "GET"])
 def form():
-    if request.method == "POST":
-        email = request.form["email"]
-        text = request.form["text"]
-        return render_template("/form.html")
-    else:
-        return render_template("/form.html")
+    # if request.method == "POST":
+    #     email = request.form["email"]
+    #     text = request.form["text"]
+    #     return render_template("/form.html")
+    # else:
+    #     return render_template("/form.html")
+    return render_template("/form.html")
 
 
 # Endpoint for logging CSP violations
@@ -114,4 +115,4 @@ def signup():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    app.run(debug=True, host="0.0.0.0", port=5001)
