@@ -34,7 +34,16 @@ csrf = CSRFProtect(app)
 @app.route("/index.php", methods=["GET"])
 @app.route("/index.html", methods=["GET"])
 def root():
-    return redirect("/", 302)
+    if request.method == "POST":
+        email = request.form["email"]
+        password = request.form["password"]
+        try:
+            dbHandler.verifyUser(email, password)  # function isnt done
+        except:
+            return
+        return redirect("/auth.html", 200)
+    else:
+        return redirect("/", 302)
 
 
 @app.route("/", methods=["POST", "GET"])
@@ -96,10 +105,12 @@ def signup():
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
-        dbHandler.insertUser(email, password)
-        return render_template("/signup.html")
+        success, message = dbHandler.insertUser(email, password)
+        return render_template(
+            "/signup.html", is_done=True, error_message=None if success else message
+        )
     else:
-        return render_template("/signup.html")
+        return render_template("/signup.html", error_message=None)
 
 
 if __name__ == "__main__":

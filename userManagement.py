@@ -23,4 +23,7 @@ def insertUser(email, password):
         return (True, "Inserted")
     except sql.IntegrityError:
         con.close()
-        return (False, "email already exists")
+        return (False, "Email already exists")
+
+def verifyUser(email, password):
+    #

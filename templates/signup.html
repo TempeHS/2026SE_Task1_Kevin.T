@@ -38,5 +38,10 @@
     </form>
     <a href="index.html">Log In</a>
   </div>
+  {% if error_message %}
+  <div class="alert alert-warning" role="alert">{{ error_message }}</div>
+  {% elif is_done %}
+  <div class="alert alert-success" role="alert">Signed up!</div>
+  {% endif %}
 </div>
 {% endblock %}
