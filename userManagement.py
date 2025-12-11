@@ -15,8 +15,10 @@ def insertUser(email, password):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
     try:
+        hashed = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
         cur.execute(
-            "INSERT INTO users (email,password) VALUES (?,?)", (email, password)
+            "INSERT INTO users (email,password) VALUES (?,?)",
+            (email, hashed.decode("utf-8")),
         )
         con.commit()
         con.close()
@@ -36,7 +38,7 @@ def verifyUser(email, password):
         return (False, "Email isn't registered")
     else:
         stored_password = row[1]
-        if stored_password == password:
+        if bcrypt.checkpw(password.encode("utf-8"), stored_password.encode("utf-8")):
             return (True, "Signed in")
         else:
             return (False, "Wrong password")
