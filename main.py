@@ -11,6 +11,12 @@ import logging
 
 import userManagement as dbHandler
 
+# 2fa stuff
+import pyotp
+import pyqrcode
+import base64
+from io import BytesIO
+
 # Code snippet for logging a message
 # app.logger.critical("message")
 
@@ -73,6 +79,10 @@ def index():
         if status:
             session["logged_in"] = True
             session["email"] = email
+
+            # 2fa secret
+            user_secret = pyotp.random_base32()
+            session["user_secret"] = user_secret
             app.logger.info(f"User {email} logged in successfully")
             return redirect("/auth.html")
         else:
@@ -90,7 +100,7 @@ def privacy():
 # example CSRF protected form
 @app.route("/form.html", methods=["POST", "GET"])
 def form():
-    if not session.get("logged_in"):
+    if not (session.get("logged_in") and session.get("authenticated")):
         return redirect("/")
 
     # if request.method == "POST":
@@ -112,9 +122,49 @@ def csp_report():
 
 @app.route("/auth.html", methods=["POST", "GET"])
 def auth():
+    # if not logged in then go to home
     if not session.get("logged_in"):
         return redirect("/")
-    return render_template("/auth.html", email=session.get("email"))
+
+    # if already authenticated then go to form
+    if session.get("authenticated"):
+        return redirect("/form.html")
+
+    user_secret = session.get("user_secret")
+    email = session.get("email")
+
+    # check if missing secret
+    if not user_secret:
+        app.logger.error(f"No 2FA secret found for {email}")
+        session.clear()
+        return redirect("/")
+
+    totp = pyotp.TOTP(user_secret)
+
+    # generate qr code
+    otp_uri = totp.provisioning_uri(name=email, issuer_name="YourAppName")
+    qr_code = pyqrcode.create(otp_uri)
+    stream = BytesIO()
+    qr_code.png(stream, scale=5)
+    qr_code_b64 = base64.b64encode(stream.getvalue()).decode("utf-8")
+
+    if request.method == "POST":
+        otp_input = request.form["otp"]
+        if totp.verify(otp_input):
+            session["authenticated"] = True
+            app.logger.info(f"User {email} completed 2FA successfully")
+            return redirect("/form.html")
+        else:
+            app.logger.warning(f"Invalid 2FA code for {email}")
+            return render_template(
+                "/auth.html", error_message="Invalid OTP", qr_code=qr_code_b64
+            )
+
+    return render_template(
+        "/auth.html",
+        email=session.get("email"),
+        qr_code=qr_code_b64,
+    )
 
 
 @app.route("/signup.html", methods=["POST", "GET"])
