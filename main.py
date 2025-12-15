@@ -3,6 +3,7 @@ from flask import redirect
 from flask import render_template
 from flask import request
 from flask import jsonify
+from flask import session
 import requests
 from flask_wtf import CSRFProtect
 from flask_csp.csp import csp_header
@@ -24,6 +25,9 @@ logging.basicConfig(
 # Generate a unique basic 16 key: https://acte.ltd/utils/randomkeygen
 app = Flask(__name__)
 app.secret_key = b"_53oi3uriq9pifpff;apl"
+app.config["SESSION_COOKIE_NAME"] = "login_session"
+app.config["SESSION_COOKIE_SECURE"] = True
+app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 csrf = CSRFProtect(app)
 
 
@@ -59,13 +63,20 @@ def root():
     }
 )
 def index():
+    if session.get("logged_in"):
+        return redirect("/auth.html")
+
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
-        status, message = dbHandler.verifyUser(email, password)  # function isnt done
+        status, message = dbHandler.verifyUser(email, password)
         if status:
+            session["logged_in"] = True
+            session["email"] = email
+            app.logger.info(f"User {email} logged in successfully")
             return redirect("/auth.html")
         else:
+            app.logger.warning(f"Failed login attempt for {email}")
             return render_template("/index.html", error_message=message)
     else:
         return render_template("/index.html")
@@ -79,6 +90,9 @@ def privacy():
 # example CSRF protected form
 @app.route("/form.html", methods=["POST", "GET"])
 def form():
+    if not session.get("logged_in"):
+        return redirect("/")
+
     # if request.method == "POST":
     #     email = request.form["email"]
     #     text = request.form["text"]
@@ -98,7 +112,9 @@ def csp_report():
 
 @app.route("/auth.html", methods=["POST", "GET"])
 def auth():
-    return render_template("/auth.html")
+    if not session.get("logged_in"):
+        return redirect("/")
+    return render_template("/auth.html", email=session.get("email"))
 
 
 @app.route("/signup.html", methods=["POST", "GET"])
@@ -114,5 +130,12 @@ def signup():
         return render_template("/signup.html", error_message=None)
 
 
+@app.route("/logout", methods=["GET", "POST"])
+def logout():
+    app.logger.info(f"User {session.get('email')} logged out")
+    session.clear()
+    return redirect("/")
+
+
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5001)
+    app.run(debug=True, host="0.0.0.0", port=5000)
