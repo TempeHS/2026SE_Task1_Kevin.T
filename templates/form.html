@@ -1,36 +1,99 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
-    <h1>Sample Secure Form</h1>
+    <h1>Add a developer log</h1>
   </div>
 </div>
 <div class="container">
   <div class="row">
     <form action="/form.html" method="POST" class="box">
-      <div class="col-auto">
-        <label name="exampleFormControlInput1" class="form-label"
-          >Email address</label
-        >
-        <input
-          name="email"
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-          placeholder="name@example.com"
-        />
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Developer</label>
+          <input
+            name="developer"
+            type="text"
+            class="form-control"
+            placeholder="Ben Jones"
+            required
+          />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Project</label>
+          <input name="project" type="text" class="form-control" required />
+        </div>
       </div>
-      <div class="col-auto">
-        <label for="exampleFormControlTextarea1" class="form-label"
-          >Example text area</label
-        >
-        <textarea
-          class="form-control"
-          name="text"
-          id="exampleFormControlTextarea1"
-          rows="3"
-        ></textarea>
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Start time</label>
+          <input
+            name="start-time"
+            type="datetime-local"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="col">
+          <label class="form-label">End time</label>
+          <input
+            name="end-time"
+            type="datetime-local"
+            class="form-control"
+            required
+          />
+        </div>
       </div>
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Diary entry time</label>
+          <input
+            name="entry-time"
+            type="datetime-local"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="col">
+          <label class="form-label">Time worked on</label>
+          <input
+            name="time-worked"
+            type="text"
+            class="form-control"
+            placeholder="_ hours"
+            required
+          />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Repository</label>
+          <input
+            name="repo"
+            type="url"
+            class="form-control"
+            placeholder="https://"
+            required
+          />
+        </div>
+      </div>
+      <br />
+
+      <div class="row">
+        <div class="col">
+          <label class="form-label">Developer notes</label>
+          <textarea class="form-control" name="notes" rows="3"></textarea>
+        </div>
+      </div>
+
       <br />
       <div class="col-auto">
         <button type="submit" class="btn btn-primary mb-3">Submit</button>
@@ -38,10 +101,17 @@
       <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
     </form>
   </div>
-  <form action="/logout" method="POST">
-    <button type="submit" class="btn btn-primary mb-3">Logout</button>
-    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-  </form>
+  <div class="row">
+    <div class="col">
+      <a href="/logs.html" class="btn btn-primary mb-3">View logs</a>
+    </div>
+    <div class="col text-end">
+      <form action="/logout" method="POST">
+        <button type="submit" class="btn btn-primary mb-3">Logout</button>
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+      </form>
+    </div>
+  </div>
 </div>
 
 {% endblock %}

@@ -92,9 +92,11 @@ def index():
         return render_template("/index.html")
 
 
-@app.route("/privacy.html", methods=["GET"])
-def privacy():
-    return render_template("/privacy.html")
+@app.route("/logs.html", methods=["GET"])
+def logs():
+    if not (session.get("logged_in") and session.get("authenticated")):
+        return redirect("/")
+    return render_template("/logs.html")
 
 
 # example CSRF protected form
@@ -103,6 +105,7 @@ def form():
     if not (session.get("logged_in") and session.get("authenticated")):
         return redirect("/")
 
+    # still need to add in database stuff
     # if request.method == "POST":
     #     email = request.form["email"]
     #     text = request.form["text"]
@@ -142,7 +145,7 @@ def auth():
     totp = pyotp.TOTP(user_secret)
 
     # generate qr code
-    otp_uri = totp.provisioning_uri(name=email, issuer_name="YourAppName")
+    otp_uri = totp.provisioning_uri(name=email, issuer_name="Developer Log App")
     qr_code = pyqrcode.create(otp_uri)
     stream = BytesIO()
     qr_code.png(stream, scale=5)
@@ -161,9 +164,7 @@ def auth():
             )
 
     return render_template(
-        "/auth.html",
-        email=session.get("email"),
-        qr_code=qr_code_b64,
+        "/auth.html", email=session.get("email"), qr_code=qr_code_b64
     )
 
 
