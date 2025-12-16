@@ -6,13 +6,24 @@
     </div>
     <div class="col">
       <form class="d-flex" role="search">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search for a log"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <div class="input-group mb-3">
+          <select class="form-select" id="inputGroupSelect01">
+            <option selected>Filter by...</option>
+            <option value="1">Developer</option>
+            <option value="2">Project</option>
+            <option value="3">Date</option>
+            <option value="4">Notes</option>
+          </select>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Text input with dropdown button"
+            placeholder="Search for..."
+          />
+          <button class="btn btn-primary" type="button" id="button-addon2">
+            Search
+          </button>
+        </div>
       </form>
     </div>
   </div>

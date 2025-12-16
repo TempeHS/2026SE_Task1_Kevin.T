@@ -5,13 +5,11 @@ from datetime import datetime
 def getLogs():
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
-    cur.execute(
-        "SELECT rowid, * FROM logs ORDER BY entry_time DESC"
-    )  # fix the sorting (might have to make the date already formatted in the database)
+    cur.execute("SELECT rowid, * FROM logs ORDER BY datetime(entry_time) DESC")
     rows = cur.fetchall()
     con.close()
 
-    # format dates (ai generated)
+    # format dates for display (ai generated)
     formatted_rows = []
     for row in rows:
         formatted_row = list(row)
