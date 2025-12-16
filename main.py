@@ -10,6 +10,7 @@ from flask_csp.csp import csp_header
 import logging
 
 import userManagement as dbHandler
+import logsManagement as logHandler
 
 # 2fa stuff
 import pyotp
@@ -96,7 +97,9 @@ def index():
 def logs():
     if not (session.get("logged_in") and session.get("authenticated")):
         return redirect("/")
-    return render_template("/logs.html")
+
+    logs_data = logHandler.getLogs()
+    return render_template("/logs.html", logs=logs_data)
 
 
 # example CSRF protected form
@@ -105,14 +108,31 @@ def form():
     if not (session.get("logged_in") and session.get("authenticated")):
         return redirect("/")
 
-    # still need to add in database stuff
-    # if request.method == "POST":
-    #     email = request.form["email"]
-    #     text = request.form["text"]
-    #     return render_template("/form.html")
-    # else:
-    #     return render_template("/form.html")
-    return render_template("/form.html")
+    if request.method == "POST":
+        developer = request.form["developer"]
+        project = request.form["project"]
+        start_time = request.form["start_time"]
+        end_time = request.form["end_time"]
+        entry_time = request.form["entry_time"]
+        time_worked = request.form["time_worked"]
+        repo = request.form["repo"]
+        notes = request.form["notes"]
+        success, message = logHandler.insertLog(
+            developer,
+            project,
+            start_time,
+            end_time,
+            entry_time,
+            time_worked,
+            repo,
+            notes,
+        )
+
+        return render_template(
+            "/form.html", is_done=True, error_message=None if success else message
+        )
+    else:
+        return render_template("/form.html", error_message=None)
 
 
 # Endpoint for logging CSP violations
