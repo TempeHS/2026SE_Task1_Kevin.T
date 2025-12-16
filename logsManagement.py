@@ -5,7 +5,9 @@ from datetime import datetime
 def getLogs():
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
-    cur.execute("SELECT rowid, * FROM logs ORDER BY entry_time DESC")
+    cur.execute(
+        "SELECT rowid, * FROM logs ORDER BY entry_time DESC"
+    )  # fix the sorting (might have to make the date already formatted in the database)
     rows = cur.fetchall()
     con.close()
 
