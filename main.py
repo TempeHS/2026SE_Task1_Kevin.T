@@ -76,13 +76,13 @@ def index():
     if request.method == "POST":
         email = request.form["email"]
         password = request.form["password"]
-        status, message = dbHandler.verifyUser(email, password)
+
+        # CHANGED: get persisted secret from DB instead of regenerating it
+        status, message, user_secret = dbHandler.verifyUser(email, password)
+
         if status:
             session["logged_in"] = True
             session["email"] = email
-
-            # 2fa secret
-            user_secret = pyotp.random_base32()
             session["user_secret"] = user_secret
             app.logger.info(f"User {email} logged in successfully")
             return redirect("/auth.html")

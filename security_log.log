@@ -9042,3 +9042,348 @@
 2025-12-16 13:02:37,352 127.0.0.1 - - [16/Dec/2025 13:02:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
 2025-12-16 13:02:37,354 127.0.0.1 - - [16/Dec/2025 13:02:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
 2025-12-16 13:02:37,424 127.0.0.1 - - [16/Dec/2025 13:02:37] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:33:33,902 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:33:33,903 [33mPress CTRL+C to quit[0m
+2026-06-01 03:33:33,903  * Restarting with stat
+2026-06-01 03:33:34,242  * Debugger is active!
+2026-06-01 03:33:34,243  * Debugger PIN: 251-490-219
+2026-06-01 03:33:39,821 127.0.0.1 - - [01/Jun/2026 03:33:39] "GET / HTTP/1.1" 200 -
+2026-06-01 03:33:40,098 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+2026-06-01 03:33:40,100 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:33:40,101 127.0.0.1 - - [01/Jun/2026 03:33:40] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:33:40,109 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/css/bootstrap.min.css HTTP/1.1" 200 -
+2026-06-01 03:33:40,120 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/css/style.css HTTP/1.1" 200 -
+2026-06-01 03:33:40,131 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:33:40,131 127.0.0.1 - - [01/Jun/2026 03:33:40] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:33:40,237 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/js/serviceWorker.js HTTP/1.1" 200 -
+2026-06-01 03:33:40,256 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/js/app.js HTTP/1.1" 200 -
+2026-06-01 03:33:40,289 127.0.0.1 - - [01/Jun/2026 03:33:40] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:33:40,292 127.0.0.1 - - [01/Jun/2026 03:33:40] "GET /static/images/favicon.png HTTP/1.1" 200 -
+2026-06-01 03:35:20,716 127.0.0.1 - - [01/Jun/2026 03:35:20] "GET /signup.html HTTP/1.1" 200 -
+2026-06-01 03:35:20,778 127.0.0.1 - - [01/Jun/2026 03:35:20] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:20,884 127.0.0.1 - - [01/Jun/2026 03:35:20] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:20,888 127.0.0.1 - - [01/Jun/2026 03:35:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:20,976 127.0.0.1 - - [01/Jun/2026 03:35:20] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:21,070 127.0.0.1 - - [01/Jun/2026 03:35:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:21,098 127.0.0.1 - - [01/Jun/2026 03:35:21] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:35:28,370 127.0.0.1 - - [01/Jun/2026 03:35:28] "POST /signup.html HTTP/1.1" 200 -
+2026-06-01 03:35:28,417 127.0.0.1 - - [01/Jun/2026 03:35:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:28,420 127.0.0.1 - - [01/Jun/2026 03:35:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:28,423 127.0.0.1 - - [01/Jun/2026 03:35:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:28,448 127.0.0.1 - - [01/Jun/2026 03:35:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:28,475 127.0.0.1 - - [01/Jun/2026 03:35:28] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:28,504 127.0.0.1 - - [01/Jun/2026 03:35:28] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:35:29,569 127.0.0.1 - - [01/Jun/2026 03:35:29] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:35:29,589 127.0.0.1 - - [01/Jun/2026 03:35:29] "GET / HTTP/1.1" 200 -
+2026-06-01 03:35:29,644 127.0.0.1 - - [01/Jun/2026 03:35:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:29,650 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/signup.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:35:29,651 127.0.0.1 - - [01/Jun/2026 03:35:29] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:35:29,655 127.0.0.1 - - [01/Jun/2026 03:35:29] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:29,658 127.0.0.1 - - [01/Jun/2026 03:35:29] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:29,667 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:35:29,667 127.0.0.1 - - [01/Jun/2026 03:35:29] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:35:29,699 127.0.0.1 - - [01/Jun/2026 03:35:29] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:29,718 127.0.0.1 - - [01/Jun/2026 03:35:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:29,738 127.0.0.1 - - [01/Jun/2026 03:35:29] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:35:33,032 User leo@proj logged in successfully
+2026-06-01 03:35:33,033 127.0.0.1 - - [01/Jun/2026 03:35:33] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-06-01 03:35:33,105 127.0.0.1 - - [01/Jun/2026 03:35:33] "[35m[1mGET /auth.html HTTP/1.1[0m" 500 -
+2026-06-01 03:35:33,153 127.0.0.1 - - [01/Jun/2026 03:35:33] "GET /auth.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2026-06-01 03:35:33,156 127.0.0.1 - - [01/Jun/2026 03:35:33] "GET /auth.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2026-06-01 03:35:33,207 127.0.0.1 - - [01/Jun/2026 03:35:33] "GET /auth.html?__debugger__=yes&cmd=resource&f=console.png&s=dq4D0v4dsJOTQ1f3YhoY HTTP/1.1" 200 -
+2026-06-01 03:35:33,232 127.0.0.1 - - [01/Jun/2026 03:35:33] "GET /auth.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2026-06-01 03:35:46,421 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:35:46,421 [33mPress CTRL+C to quit[0m
+2026-06-01 03:35:46,422  * Restarting with stat
+2026-06-01 03:35:46,710  * Debugger is active!
+2026-06-01 03:35:46,711  * Debugger PIN: 251-490-219
+2026-06-01 03:35:47,705 127.0.0.1 - - [01/Jun/2026 03:35:47] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:35:47,776 127.0.0.1 - - [01/Jun/2026 03:35:47] "[35m[1mGET /auth.html HTTP/1.1[0m" 500 -
+2026-06-01 03:35:47,830 127.0.0.1 - - [01/Jun/2026 03:35:47] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:47,832 127.0.0.1 - - [01/Jun/2026 03:35:47] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:47,878 127.0.0.1 - - [01/Jun/2026 03:35:47] "GET /auth.html?__debugger__=yes&cmd=resource&f=console.png&s=mp2L0Dtt2Zo9kxALuIqC HTTP/1.1" 200 -
+2026-06-01 03:35:49,822 127.0.0.1 - - [01/Jun/2026 03:35:49] "[35m[1mGET /auth.html HTTP/1.1[0m" 500 -
+2026-06-01 03:35:49,862 127.0.0.1 - - [01/Jun/2026 03:35:49] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:49,870 127.0.0.1 - - [01/Jun/2026 03:35:49] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:49,895 127.0.0.1 - - [01/Jun/2026 03:35:49] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=console.png&s=mp2L0Dtt2Zo9kxALuIqC HTTP/1.1[0m" 304 -
+2026-06-01 03:35:49,916 127.0.0.1 - - [01/Jun/2026 03:35:49] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-01 03:35:50,019 127.0.0.1 - - [01/Jun/2026 03:35:50] "[35m[1mGET /auth.html HTTP/1.1[0m" 500 -
+2026-06-01 03:35:50,053 127.0.0.1 - - [01/Jun/2026 03:35:50] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:35:50,062 127.0.0.1 - - [01/Jun/2026 03:35:50] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-01 03:35:50,084 127.0.0.1 - - [01/Jun/2026 03:35:50] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=console.png&s=mp2L0Dtt2Zo9kxALuIqC HTTP/1.1[0m" 304 -
+2026-06-01 03:35:50,105 127.0.0.1 - - [01/Jun/2026 03:35:50] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2026-06-01 03:36:02,678 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:36:02,678 [33mPress CTRL+C to quit[0m
+2026-06-01 03:36:02,678  * Restarting with stat
+2026-06-01 03:36:02,972  * Debugger is active!
+2026-06-01 03:36:02,973  * Debugger PIN: 251-490-219
+2026-06-01 03:36:04,194 127.0.0.1 - - [01/Jun/2026 03:36:04] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:36:04,256 127.0.0.1 - - [01/Jun/2026 03:36:04] "[35m[1mGET /auth.html HTTP/1.1[0m" 500 -
+2026-06-01 03:36:04,302 127.0.0.1 - - [01/Jun/2026 03:36:04] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:36:04,303 127.0.0.1 - - [01/Jun/2026 03:36:04] "[36mGET /auth.html?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2026-06-01 03:36:04,349 127.0.0.1 - - [01/Jun/2026 03:36:04] "GET /auth.html?__debugger__=yes&cmd=resource&f=console.png&s=0btrSdf5nAL2v3DbKglb HTTP/1.1" 200 -
+2026-06-01 03:37:04,080 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:37:04,080 [33mPress CTRL+C to quit[0m
+2026-06-01 03:37:04,081  * Restarting with stat
+2026-06-01 03:37:04,383  * Debugger is active!
+2026-06-01 03:37:04,384  * Debugger PIN: 251-490-219
+2026-06-01 03:37:10,081 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:37:10,081 [33mPress CTRL+C to quit[0m
+2026-06-01 03:37:10,082  * Restarting with stat
+2026-06-01 03:37:10,381  * Debugger is active!
+2026-06-01 03:37:10,382  * Debugger PIN: 251-490-219
+2026-06-01 03:37:11,425 127.0.0.1 - - [01/Jun/2026 03:37:11] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:37:11,563 127.0.0.1 - - [01/Jun/2026 03:37:11] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:37:11,623 127.0.0.1 - - [01/Jun/2026 03:37:11] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:11,625 127.0.0.1 - - [01/Jun/2026 03:37:11] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:11,625 127.0.0.1 - - [01/Jun/2026 03:37:11] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:11,737 127.0.0.1 - - [01/Jun/2026 03:37:11] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:11,766 127.0.0.1 - - [01/Jun/2026 03:37:11] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:11,797 127.0.0.1 - - [01/Jun/2026 03:37:11] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:14,797 127.0.0.1 - - [01/Jun/2026 03:37:14] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:37:14,817 127.0.0.1 - - [01/Jun/2026 03:37:14] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:37:14,886 127.0.0.1 - - [01/Jun/2026 03:37:14] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:37:14,933 127.0.0.1 - - [01/Jun/2026 03:37:14] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:14,936 127.0.0.1 - - [01/Jun/2026 03:37:14] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:14,938 127.0.0.1 - - [01/Jun/2026 03:37:14] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:14,966 127.0.0.1 - - [01/Jun/2026 03:37:14] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:14,990 127.0.0.1 - - [01/Jun/2026 03:37:14] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,011 127.0.0.1 - - [01/Jun/2026 03:37:15] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:15,445 127.0.0.1 - - [01/Jun/2026 03:37:15] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:37:15,476 127.0.0.1 - - [01/Jun/2026 03:37:15] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:37:15,549 127.0.0.1 - - [01/Jun/2026 03:37:15] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:37:15,598 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,600 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,602 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,630 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,648 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,670 127.0.0.1 - - [01/Jun/2026 03:37:15] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:15,753 127.0.0.1 - - [01/Jun/2026 03:37:15] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:37:15,776 127.0.0.1 - - [01/Jun/2026 03:37:15] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:37:15,849 127.0.0.1 - - [01/Jun/2026 03:37:15] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:37:15,898 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,902 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,904 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,929 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,949 127.0.0.1 - - [01/Jun/2026 03:37:15] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:15,975 127.0.0.1 - - [01/Jun/2026 03:37:15] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:16,143 127.0.0.1 - - [01/Jun/2026 03:37:16] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:37:16,162 127.0.0.1 - - [01/Jun/2026 03:37:16] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:37:16,229 127.0.0.1 - - [01/Jun/2026 03:37:16] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:37:16,274 127.0.0.1 - - [01/Jun/2026 03:37:16] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:16,278 127.0.0.1 - - [01/Jun/2026 03:37:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:16,280 127.0.0.1 - - [01/Jun/2026 03:37:16] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:16,305 127.0.0.1 - - [01/Jun/2026 03:37:16] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:16,323 127.0.0.1 - - [01/Jun/2026 03:37:16] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:16,345 127.0.0.1 - - [01/Jun/2026 03:37:16] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:28,882 User leo@proj completed 2FA successfully
+2026-06-01 03:37:28,883 127.0.0.1 - - [01/Jun/2026 03:37:28] "[32mPOST /auth.html HTTP/1.1[0m" 302 -
+2026-06-01 03:37:28,906 127.0.0.1 - - [01/Jun/2026 03:37:28] "GET /form.html HTTP/1.1" 200 -
+2026-06-01 03:37:28,953 127.0.0.1 - - [01/Jun/2026 03:37:28] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:28,956 127.0.0.1 - - [01/Jun/2026 03:37:28] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:28,958 127.0.0.1 - - [01/Jun/2026 03:37:28] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:28,993 127.0.0.1 - - [01/Jun/2026 03:37:28] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:29,017 127.0.0.1 - - [01/Jun/2026 03:37:29] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:29,039 127.0.0.1 - - [01/Jun/2026 03:37:29] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:33,446 127.0.0.1 - - [01/Jun/2026 03:37:33] "GET /logs.html HTTP/1.1" 200 -
+2026-06-01 03:37:33,491 127.0.0.1 - - [01/Jun/2026 03:37:33] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:33,495 127.0.0.1 - - [01/Jun/2026 03:37:33] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:33,497 127.0.0.1 - - [01/Jun/2026 03:37:33] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:33,531 127.0.0.1 - - [01/Jun/2026 03:37:33] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:33,552 127.0.0.1 - - [01/Jun/2026 03:37:33] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:33,574 127.0.0.1 - - [01/Jun/2026 03:37:33] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:37:37,125 127.0.0.1 - - [01/Jun/2026 03:37:37] "GET /form.html HTTP/1.1" 200 -
+2026-06-01 03:37:37,180 127.0.0.1 - - [01/Jun/2026 03:37:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:37,183 127.0.0.1 - - [01/Jun/2026 03:37:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:37:37,186 127.0.0.1 - - [01/Jun/2026 03:37:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:37,212 127.0.0.1 - - [01/Jun/2026 03:37:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:37,233 127.0.0.1 - - [01/Jun/2026 03:37:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:37:37,255 127.0.0.1 - - [01/Jun/2026 03:37:37] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:03,745 127.0.0.1 - - [01/Jun/2026 03:38:03] "POST /form.html HTTP/1.1" 200 -
+2026-06-01 03:38:03,792 127.0.0.1 - - [01/Jun/2026 03:38:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:03,796 127.0.0.1 - - [01/Jun/2026 03:38:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:03,798 127.0.0.1 - - [01/Jun/2026 03:38:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:03,821 127.0.0.1 - - [01/Jun/2026 03:38:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:03,851 127.0.0.1 - - [01/Jun/2026 03:38:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:03,878 127.0.0.1 - - [01/Jun/2026 03:38:03] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:05,277 127.0.0.1 - - [01/Jun/2026 03:38:05] "GET /logs.html HTTP/1.1" 200 -
+2026-06-01 03:38:05,327 127.0.0.1 - - [01/Jun/2026 03:38:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:05,330 127.0.0.1 - - [01/Jun/2026 03:38:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:05,333 127.0.0.1 - - [01/Jun/2026 03:38:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:05,369 127.0.0.1 - - [01/Jun/2026 03:38:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:05,389 127.0.0.1 - - [01/Jun/2026 03:38:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:05,412 127.0.0.1 - - [01/Jun/2026 03:38:05] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:32,532 User leo@proj logged out
+2026-06-01 03:38:32,532 127.0.0.1 - - [01/Jun/2026 03:38:32] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2026-06-01 03:38:32,554 127.0.0.1 - - [01/Jun/2026 03:38:32] "GET / HTTP/1.1" 200 -
+2026-06-01 03:38:32,602 127.0.0.1 - - [01/Jun/2026 03:38:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:32,606 127.0.0.1 - - [01/Jun/2026 03:38:32] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:32,609 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/logs.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:38:32,609 127.0.0.1 - - [01/Jun/2026 03:38:32] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:38:32,612 127.0.0.1 - - [01/Jun/2026 03:38:32] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:32,616 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/logs.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:38:32,617 127.0.0.1 - - [01/Jun/2026 03:38:32] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:38:32,645 127.0.0.1 - - [01/Jun/2026 03:38:32] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:32,664 127.0.0.1 - - [01/Jun/2026 03:38:32] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:32,684 127.0.0.1 - - [01/Jun/2026 03:38:32] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:37,276 Failed login attempt for leo@p
+2026-06-01 03:38:37,276 127.0.0.1 - - [01/Jun/2026 03:38:37] "POST / HTTP/1.1" 200 -
+2026-06-01 03:38:37,330 127.0.0.1 - - [01/Jun/2026 03:38:37] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:37,333 127.0.0.1 - - [01/Jun/2026 03:38:37] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:37,335 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:38:37,335 127.0.0.1 - - [01/Jun/2026 03:38:37] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:38:37,338 127.0.0.1 - - [01/Jun/2026 03:38:37] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:37,343 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:38:37,343 127.0.0.1 - - [01/Jun/2026 03:38:37] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:38:37,371 127.0.0.1 - - [01/Jun/2026 03:38:37] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:37,389 127.0.0.1 - - [01/Jun/2026 03:38:37] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:37,411 127.0.0.1 - - [01/Jun/2026 03:38:37] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:42,041 User leo@proj logged in successfully
+2026-06-01 03:38:42,041 127.0.0.1 - - [01/Jun/2026 03:38:42] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-06-01 03:38:42,112 127.0.0.1 - - [01/Jun/2026 03:38:42] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:38:42,172 127.0.0.1 - - [01/Jun/2026 03:38:42] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:42,174 127.0.0.1 - - [01/Jun/2026 03:38:42] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:42,180 127.0.0.1 - - [01/Jun/2026 03:38:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:42,208 127.0.0.1 - - [01/Jun/2026 03:38:42] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:42,229 127.0.0.1 - - [01/Jun/2026 03:38:42] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:42,257 127.0.0.1 - - [01/Jun/2026 03:38:42] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:38:49,612 Invalid 2FA code for leo@proj
+2026-06-01 03:38:49,612 127.0.0.1 - - [01/Jun/2026 03:38:49] "POST /auth.html HTTP/1.1" 200 -
+2026-06-01 03:38:49,659 127.0.0.1 - - [01/Jun/2026 03:38:49] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:49,663 127.0.0.1 - - [01/Jun/2026 03:38:49] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:49,665 127.0.0.1 - - [01/Jun/2026 03:38:49] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:38:49,691 127.0.0.1 - - [01/Jun/2026 03:38:49] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:49,713 127.0.0.1 - - [01/Jun/2026 03:38:49] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:38:49,736 127.0.0.1 - - [01/Jun/2026 03:38:49] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:04,810 [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://10.0.0.156:5000
+2026-06-01 03:43:04,810 [33mPress CTRL+C to quit[0m
+2026-06-01 03:43:04,811  * Restarting with stat
+2026-06-01 03:43:05,157  * Debugger is active!
+2026-06-01 03:43:05,158  * Debugger PIN: 251-490-219
+2026-06-01 03:43:05,228 127.0.0.1 - - [01/Jun/2026 03:43:05] "[32mGET / HTTP/1.1[0m" 302 -
+2026-06-01 03:43:05,389 127.0.0.1 - - [01/Jun/2026 03:43:05] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:43:05,597 127.0.0.1 - - [01/Jun/2026 03:43:05] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:05,609 127.0.0.1 - - [01/Jun/2026 03:43:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:05,614 127.0.0.1 - - [01/Jun/2026 03:43:05] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:05,746 127.0.0.1 - - [01/Jun/2026 03:43:05] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:05,770 127.0.0.1 - - [01/Jun/2026 03:43:05] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:05,797 127.0.0.1 - - [01/Jun/2026 03:43:05] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:07,004 User leo@proj logged out
+2026-06-01 03:43:07,004 127.0.0.1 - - [01/Jun/2026 03:43:07] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2026-06-01 03:43:07,028 127.0.0.1 - - [01/Jun/2026 03:43:07] "GET / HTTP/1.1" 200 -
+2026-06-01 03:43:07,092 127.0.0.1 - - [01/Jun/2026 03:43:07] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:07,100 127.0.0.1 - - [01/Jun/2026 03:43:07] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:07,110 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/auth.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:43:07,110 127.0.0.1 - - [01/Jun/2026 03:43:07] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:07,116 127.0.0.1 - - [01/Jun/2026 03:43:07] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:07,130 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/auth.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:43:07,130 127.0.0.1 - - [01/Jun/2026 03:43:07] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:07,179 127.0.0.1 - - [01/Jun/2026 03:43:07] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:07,208 127.0.0.1 - - [01/Jun/2026 03:43:07] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:07,240 127.0.0.1 - - [01/Jun/2026 03:43:07] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:08,513 127.0.0.1 - - [01/Jun/2026 03:43:08] "GET /signup.html HTTP/1.1" 200 -
+2026-06-01 03:43:08,555 127.0.0.1 - - [01/Jun/2026 03:43:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:08,558 127.0.0.1 - - [01/Jun/2026 03:43:08] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:08,560 127.0.0.1 - - [01/Jun/2026 03:43:08] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:08,586 127.0.0.1 - - [01/Jun/2026 03:43:08] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:08,609 127.0.0.1 - - [01/Jun/2026 03:43:08] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:08,637 127.0.0.1 - - [01/Jun/2026 03:43:08] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:12,129 127.0.0.1 - - [01/Jun/2026 03:43:12] "POST /signup.html HTTP/1.1" 200 -
+2026-06-01 03:43:12,181 127.0.0.1 - - [01/Jun/2026 03:43:12] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:12,185 127.0.0.1 - - [01/Jun/2026 03:43:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:12,188 127.0.0.1 - - [01/Jun/2026 03:43:12] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:12,216 127.0.0.1 - - [01/Jun/2026 03:43:12] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:12,244 127.0.0.1 - - [01/Jun/2026 03:43:12] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:12,277 127.0.0.1 - - [01/Jun/2026 03:43:12] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:13,183 127.0.0.1 - - [01/Jun/2026 03:43:13] "[32mGET /index.html HTTP/1.1[0m" 302 -
+2026-06-01 03:43:13,202 127.0.0.1 - - [01/Jun/2026 03:43:13] "GET / HTTP/1.1" 200 -
+2026-06-01 03:43:13,253 127.0.0.1 - - [01/Jun/2026 03:43:13] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:13,257 127.0.0.1 - - [01/Jun/2026 03:43:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:13,258 127.0.0.1 - - [01/Jun/2026 03:43:13] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:13,262 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/signup.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:43:13,262 127.0.0.1 - - [01/Jun/2026 03:43:13] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:13,265 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/signup.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:43:13,265 127.0.0.1 - - [01/Jun/2026 03:43:13] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:13,299 127.0.0.1 - - [01/Jun/2026 03:43:13] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:13,353 127.0.0.1 - - [01/Jun/2026 03:43:13] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:13,381 127.0.0.1 - - [01/Jun/2026 03:43:13] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:21,026 User leo@proj logged in successfully
+2026-06-01 03:43:21,026 127.0.0.1 - - [01/Jun/2026 03:43:21] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-06-01 03:43:21,097 127.0.0.1 - - [01/Jun/2026 03:43:21] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:43:21,144 127.0.0.1 - - [01/Jun/2026 03:43:21] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:21,147 127.0.0.1 - - [01/Jun/2026 03:43:21] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:21,149 127.0.0.1 - - [01/Jun/2026 03:43:21] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:21,173 127.0.0.1 - - [01/Jun/2026 03:43:21] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:21,194 127.0.0.1 - - [01/Jun/2026 03:43:21] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:21,217 127.0.0.1 - - [01/Jun/2026 03:43:21] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:46,247 User leo@proj completed 2FA successfully
+2026-06-01 03:43:46,247 127.0.0.1 - - [01/Jun/2026 03:43:46] "[32mPOST /auth.html HTTP/1.1[0m" 302 -
+2026-06-01 03:43:46,270 127.0.0.1 - - [01/Jun/2026 03:43:46] "GET /form.html HTTP/1.1" 200 -
+2026-06-01 03:43:46,316 127.0.0.1 - - [01/Jun/2026 03:43:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:46,320 127.0.0.1 - - [01/Jun/2026 03:43:46] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:46,323 127.0.0.1 - - [01/Jun/2026 03:43:46] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:46,356 127.0.0.1 - - [01/Jun/2026 03:43:46] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:46,378 127.0.0.1 - - [01/Jun/2026 03:43:46] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:46,406 127.0.0.1 - - [01/Jun/2026 03:43:46] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:50,614 User leo@proj logged out
+2026-06-01 03:43:50,614 127.0.0.1 - - [01/Jun/2026 03:43:50] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2026-06-01 03:43:50,633 127.0.0.1 - - [01/Jun/2026 03:43:50] "GET / HTTP/1.1" 200 -
+2026-06-01 03:43:50,688 127.0.0.1 - - [01/Jun/2026 03:43:50] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:50,692 127.0.0.1 - - [01/Jun/2026 03:43:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:50,696 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/form.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:43:50,696 127.0.0.1 - - [01/Jun/2026 03:43:50] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:50,708 127.0.0.1 - - [01/Jun/2026 03:43:50] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:50,711 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/form.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:43:50,711 127.0.0.1 - - [01/Jun/2026 03:43:50] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:43:50,735 127.0.0.1 - - [01/Jun/2026 03:43:50] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:50,755 127.0.0.1 - - [01/Jun/2026 03:43:50] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:50,782 127.0.0.1 - - [01/Jun/2026 03:43:50] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:43:57,612 User leo@proj logged in successfully
+2026-06-01 03:43:57,613 127.0.0.1 - - [01/Jun/2026 03:43:57] "[32mPOST / HTTP/1.1[0m" 302 -
+2026-06-01 03:43:57,689 127.0.0.1 - - [01/Jun/2026 03:43:57] "GET /auth.html HTTP/1.1" 200 -
+2026-06-01 03:43:57,747 127.0.0.1 - - [01/Jun/2026 03:43:57] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:57,750 127.0.0.1 - - [01/Jun/2026 03:43:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:57,753 127.0.0.1 - - [01/Jun/2026 03:43:57] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:43:57,783 127.0.0.1 - - [01/Jun/2026 03:43:57] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:57,801 127.0.0.1 - - [01/Jun/2026 03:43:57] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:43:57,824 127.0.0.1 - - [01/Jun/2026 03:43:57] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:44:03,345 User leo@proj completed 2FA successfully
+2026-06-01 03:44:03,346 127.0.0.1 - - [01/Jun/2026 03:44:03] "[32mPOST /auth.html HTTP/1.1[0m" 302 -
+2026-06-01 03:44:03,370 127.0.0.1 - - [01/Jun/2026 03:44:03] "GET /form.html HTTP/1.1" 200 -
+2026-06-01 03:44:03,416 127.0.0.1 - - [01/Jun/2026 03:44:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:44:03,418 127.0.0.1 - - [01/Jun/2026 03:44:03] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:03,422 127.0.0.1 - - [01/Jun/2026 03:44:03] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:44:03,454 127.0.0.1 - - [01/Jun/2026 03:44:03] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:03,475 127.0.0.1 - - [01/Jun/2026 03:44:03] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:03,500 127.0.0.1 - - [01/Jun/2026 03:44:03] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
+2026-06-01 03:44:44,669 User leo@proj logged out
+2026-06-01 03:44:44,669 127.0.0.1 - - [01/Jun/2026 03:44:44] "[32mPOST /logout HTTP/1.1[0m" 302 -
+2026-06-01 03:44:44,694 127.0.0.1 - - [01/Jun/2026 03:44:44] "GET / HTTP/1.1" 200 -
+2026-06-01 03:44:44,746 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/form.html","violated-directive":"style-src-attr","effective-directive":"style-src-attr","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"inline","line-number":18,"source-file":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","status-code":200,"script-sample":""}}
+2026-06-01 03:44:44,746 127.0.0.1 - - [01/Jun/2026 03:44:44] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:44:44,751 127.0.0.1 - - [01/Jun/2026 03:44:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+2026-06-01 03:44:44,753 127.0.0.1 - - [01/Jun/2026 03:44:44] "[36mGET /static/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2026-06-01 03:44:44,755 127.0.0.1 - - [01/Jun/2026 03:44:44] "[36mGET /static/js/bootstrap.bundle.min.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:44,761 {"csp-report":{"document-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/","referrer":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/form.html","violated-directive":"manifest-src","effective-directive":"manifest-src","original-policy":"script-src 'self'; img-src 'self' data:; child-src 'self'; default-src 'self'; style-src 'self'; media-src 'self'; object-src 'self'; connect-src 'self'; base-uri 'self'; report-uri /csp_report; font-src 'self'; worker-src 'self'; frame-ancestors 'none'; form-action 'self'; frame-src 'none'","disposition":"enforce","blocked-uri":"https://congenial-adventure-666x4g445j6245rx-5000.app.github.dev/static/manifest.json","status-code":200,"script-sample":""}}
+2026-06-01 03:44:44,762 127.0.0.1 - - [01/Jun/2026 03:44:44] "POST /csp_report HTTP/1.1" 200 -
+2026-06-01 03:44:44,789 127.0.0.1 - - [01/Jun/2026 03:44:44] "[36mGET /static/js/serviceWorker.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:44,808 127.0.0.1 - - [01/Jun/2026 03:44:44] "[36mGET /static/js/app.js HTTP/1.1[0m" 304 -
+2026-06-01 03:44:44,830 127.0.0.1 - - [01/Jun/2026 03:44:44] "[33mGET /static/js/serviceworker.js HTTP/1.1[0m" 404 -
