@@ -1,44 +1,22 @@
 {% extends 'layout.html' %} {% block content %}
 <div class="container">
   <div class="row">
-    <h1>Log In</h1>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
-    <form method="POST" class="box">
-      <div class="col-auto">
-        <label name="exampleFormControlInput1" class="form-label"
-          >Email address</label
-        >
-        <input
-          name="email"
-          type="email"
-          class="form-control"
-          id="exampleFormControlInput1"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-          placeholder="name@example.com"
-        />
-      </div>
-      <div class="col-auto">
-        <label for="exampleInputPassword1">Password</label>
-        <input
-          name="password"
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
-        />
-      </div>
-      <br />
-      <div class="col-auto">
-        <button type="submit" class="btn btn-primary mb-3">Submit</button>
-      </div>
-      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-    </form>
-    <a href="signup.html">Sign Up</a>
-    {% if error_message %}
-    <div class="alert alert-warning" role="alert">{{ error_message }}</div>
+    <h1>Home</h1>
+
+    {% if is_logged_in %}
+    <div class="alert alert-success" role="alert">
+      Logged in as <strong>{{ user_email }}</strong>
+    </div>
+    {% else %}
+    <div class="alert alert-secondary" role="alert">You are not logged in.</div>
+    {% endif %}
+
+    <p>Welcome to the site.</p>
+    {% if not is_logged_in %}
+    <p>
+      <a class="btn btn-primary" href="/login.html">Log In</a>
+      <a class="btn btn-outline-primary" href="/signup.html">Sign Up</a>
+    </p>
     {% endif %}
   </div>
 </div>
