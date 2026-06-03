@@ -48,7 +48,7 @@ def root():
     return redirect("/", 302)
 
 
-@app.route("/", methods=["POST", "GET"])
+@app.route("/", methods=["GET"])
 @csp_header(
     {
         # Server Side CSP is consistent with meta CSP in layout.html
@@ -70,6 +70,35 @@ def root():
     }
 )
 def index():
+    is_logged_in = bool(session.get("logged_in") and session.get("authenticated"))
+    return render_template(
+        "/index.html",
+        is_logged_in=is_logged_in,
+        user_email=session.get("email"),
+    )
+
+
+@app.route("/login.html", methods=["POST", "GET"])
+@csp_header(
+    {
+        "base-uri": "'self'",
+        "default-src": "'self'",
+        "style-src": "'self'",
+        "script-src": "'self'",
+        "img-src": "'self' data:",
+        "media-src": "'self'",
+        "font-src": "'self'",
+        "object-src": "'self'",
+        "child-src": "'self'",
+        "connect-src": "'self'",
+        "worker-src": "'self'",
+        "report-uri": "/csp_report",
+        "frame-ancestors": "'none'",
+        "form-action": "'self'",
+        "frame-src": "'none'",
+    }
+)
+def login():
     if session.get("logged_in"):
         return redirect("/auth.html")
 
@@ -77,7 +106,6 @@ def index():
         email = request.form["email"]
         password = request.form["password"]
 
-        # CHANGED: get persisted secret from DB instead of regenerating it
         status, message, user_secret = dbHandler.verifyUser(email, password)
 
         if status:
@@ -88,51 +116,9 @@ def index():
             return redirect("/auth.html")
         else:
             app.logger.warning(f"Failed login attempt for {email}")
-            return render_template("/index.html", error_message=message)
-    else:
-        return render_template("/index.html")
+            return render_template("/login.html", error_message=message)
 
-
-@app.route("/logs.html", methods=["GET"])
-def logs():
-    if not (session.get("logged_in") and session.get("authenticated")):
-        return redirect("/")
-
-    logs_data = logHandler.getLogs()
-    return render_template("/logs.html", logs=logs_data)
-
-
-# example CSRF protected form
-@app.route("/form.html", methods=["POST", "GET"])
-def form():
-    if not (session.get("logged_in") and session.get("authenticated")):
-        return redirect("/")
-
-    if request.method == "POST":
-        developer = request.form["developer"]
-        project = request.form["project"]
-        start_time = request.form["start_time"]
-        end_time = request.form["end_time"]
-        entry_time = request.form["entry_time"]
-        time_worked = request.form["time_worked"]
-        repo = request.form["repo"]
-        notes = request.form["notes"]
-        success, message = logHandler.insertLog(
-            developer,
-            project,
-            start_time,
-            end_time,
-            entry_time,
-            time_worked,
-            repo,
-            notes,
-        )
-
-        return render_template(
-            "/form.html", is_done=True, error_message=None if success else message
-        )
-    else:
-        return render_template("/form.html", error_message=None)
+    return render_template("/login.html")
 
 
 # Endpoint for logging CSP violations
@@ -145,13 +131,11 @@ def csp_report():
 
 @app.route("/auth.html", methods=["POST", "GET"])
 def auth():
-    # if not logged in then go to home
     if not session.get("logged_in"):
-        return redirect("/")
+        return redirect("/login.html")
 
-    # if already authenticated then go to form
     if session.get("authenticated"):
-        return redirect("/form.html")
+        return redirect("/index.html")
 
     user_secret = session.get("user_secret")
     email = session.get("email")
@@ -160,7 +144,7 @@ def auth():
     if not user_secret:
         app.logger.error(f"No 2FA secret found for {email}")
         session.clear()
-        return redirect("/")
+        return redirect("/login.html")
 
     totp = pyotp.TOTP(user_secret)
 
@@ -176,7 +160,7 @@ def auth():
         if totp.verify(otp_input):
             session["authenticated"] = True
             app.logger.info(f"User {email} completed 2FA successfully")
-            return redirect("/form.html")
+            return redirect("/index.html")
         else:
             app.logger.warning(f"Invalid 2FA code for {email}")
             return render_template(
