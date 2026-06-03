@@ -3,6 +3,3 @@ bcrypt
 flask_wtf
 flask-csp
 requests
-pyotp
-pyqrcode
-pypng
