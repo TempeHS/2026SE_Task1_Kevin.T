@@ -1,6 +1,5 @@
 import sqlite3 as sql
 import bcrypt
-import pyotp
 
 
 ### example
@@ -17,10 +16,9 @@ def insertUser(email, password):
     cur = con.cursor()
     try:
         hashed = bcrypt.hashpw(password.encode("utf-8"), bcrypt.gensalt())
-        totp_secret = pyotp.random_base32()
         cur.execute(
-            "INSERT INTO users (email,password,totp_secret) VALUES (?,?,?)",
-            (email, hashed.decode("utf-8"), totp_secret),
+            "INSERT INTO users (email,password) VALUES (?,?)",
+            (email, hashed.decode("utf-8")),
         )
         con.commit()
         con.close()
@@ -33,18 +31,14 @@ def insertUser(email, password):
 def verifyUser(email, password):
     con = sql.connect("databaseFiles/database.db")
     cur = con.cursor()
-    cur.execute(
-        "SELECT email,password,totp_secret FROM users WHERE email = ?", (email,)
-    )
+    cur.execute("SELECT email,password FROM users WHERE email = ?", (email,))
     row = cur.fetchone()
     con.close()
-
-    if row is None:
-        return (False, "Email isn't registered", None)
-
-    stored_password = row[1]
-    stored_secret = row[2]
-    if bcrypt.checkpw(password.encode("utf-8"), stored_password.encode("utf-8")):
-        return (True, "Signed in", stored_secret)
+    if row == None:
+        return (False, "Email isn't registered")
     else:
-        return (False, "Wrong password", None)
+        stored_password = row[1]
+        if bcrypt.checkpw(password.encode("utf-8"), stored_password.encode("utf-8")):
+            return (True, "Signed in")
+        else:
+            return (False, "Wrong password")
